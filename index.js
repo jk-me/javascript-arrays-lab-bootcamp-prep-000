@@ -8,27 +8,23 @@ kittens = function(){
 
 function destructivelyAppendKitten(n){
   window.kittens.push('Ralph')
+  return window.kitten
 }
 
 function destructivelyPrependKitten(n){
-  window.kittens.
+  window.kittens.unshift('Bob')
+  return window.kitten
 }
-    it('prepends a kitten to the beginning of the kittens array', function() {
-      destructivelyPrependKitten("Bob")
 
-      expect(window.kittens).toEqual(["Bob", "Milo", "Otis", "Garfield"])
-    })
-  })
 
-  describe('destructivelyRemoveLastKitten()', function() {
-    it('removes the last kitten from the kittens array', function() {
-      destructivelyRemoveLastKitten()
+function destructivelyRemoveLastKitten(){
+  window.kitten.shift()
+  return window.kitten
+}
 
-      expect(window.kittens).toEqual(["Milo", "Otis"])
-    })
-  })
-
-  describe('destructivelyRemoveFirstKitten()', function() {
+function destructivelyRemoveFirstKitten(){
+  
+}
     it('removes the First kitten from the kittens array', function() {
       destructivelyRemoveFirstKitten()
 
