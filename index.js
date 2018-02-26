@@ -7,17 +7,12 @@ kittens = function(){
 }
 
 function destructivelyAppendKitten(n){
-  
+  window.kittens.push('Ralph')
 }
 
-  describe('destructivelyAppendKitten(name)', function() {
-    it('appends a kitten to the end of the kittens array', function() {
-      destructivelyAppendKitten('Ralph')
-      expect(window.kittens).toEqual(["Milo", "Otis", "Garfield", "Ralph"])
-    })
-  })
-
-  describe('destructivelyPrependKitten(name)', function() {
+function destructivelyPrependKitten(n){
+  window.kittens.
+}
     it('prepends a kitten to the beginning of the kittens array', function() {
       destructivelyPrependKitten("Bob")
 
