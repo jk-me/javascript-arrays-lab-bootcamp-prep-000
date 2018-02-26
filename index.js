@@ -39,21 +39,12 @@ function prependKitten(name){
 }
 
 function removeLastKitten(){
-  var x = 
+  var x = window.kitten.slice(0,window.kitten.length - 1)
+  return x
 }
-    it('removes the last kitten in the kittens array and returns a new array, leaving the kittens array unchanged', function() {
-      expect(removeLastKitten()).toEqual(["Milo", "Otis"])
 
-      expect(window.kittens).toEqual(["Milo", "Otis", "Garfield"])
-    })
-  })
+function removeFirstKitten(){
+  var x = window.kitten.slice(1)
+  return x
+}
 
-  describe('removeFirstKitten()', function() {
-    it('removes the first kitten from the kittens array and returns a new array, leaving the kittens array unchanged', function() {
-      expect(removeFirstKitten()).toEqual(["Otis", "Garfield"])
-
-      expect(window.kittens).toEqual(["Milo", "Otis", "Garfield"])
-    })
-  })
-
-})
