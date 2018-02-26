@@ -39,12 +39,12 @@ function prependKitten(name){
 }
 
 function removeLastKitten(){
-  var x = window.kitten.slice(0,window.kitten.length - 1)
+  var x = window.kittens.slice(0,window.kitten.length - 1)
   return x
 }
 
 function removeFirstKitten(){
-  var x = window.kitten.slice(1)
+  var x = window.kittens.slice(1)
   return x
 }
 
