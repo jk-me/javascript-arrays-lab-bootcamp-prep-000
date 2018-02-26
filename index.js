@@ -1,3 +1,3 @@
 const app = "I don't do much."
 
-window.kittens = []
+window.kittens = ['Milo', 'Otis', 'Garfield']
